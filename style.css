@@ -136,9 +136,14 @@ section h2 {
     width: 80px;
   }
 nav ul.nav-links {
-    gap: 15px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
   }
-
+nav ul.nav-links li a {
+    font-size: 1rem;
+    white-space: nowrap;
+}
   section h2 {
     font-size: 2rem;
   }
