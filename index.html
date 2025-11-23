@@ -4,28 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rejoice Elsa Sam - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Boldonse&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-function toggleMenu() {
-  const menu = document.querySelector(".nav-links");
-  menu.classList.toggle("show");
-}
-</script>
+
 <body>
-  <!-- Navbar -->
-  <header>
-    <div class="hamburger" id="hamburger">
+
+<header>
+    <div class="hamburger" onclick="toggleMenu()">
         ☰
     </div>
 
     <div class="logo">Rejoice <br><span>Elsa Sam</span></div>
 
     <nav>
-        <ul class="nav-links" id="menu">
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="skills.html">Skills</a></li>
@@ -36,31 +28,25 @@ function toggleMenu() {
 
     <a href="contact.html" class="btn active">Work with me</a>
 </header>
-<script>
-  const currentPage = window.location.pathname;
-  if (currentPage.includes("Home")) {
-    document.getElementById("home-link").classList.add("active");
-  } else if (currentPage.includes("about")) {
-    document.getElementById("about-link").classList.add("active");
-  }
-</script>
-  <!-- Hero Section -->
-  <section class="hero">
+
+<section class="hero">
     <div class="shapes">
-      <img src="circle.png" alt="Circle shape">
-      <img src="star.png" alt="Star shape">
-      <img src="triangle.png" alt="Triangle shape">
+      <img src="circle.png">
+      <img src="star.png">
+      <img src="triangle.png">
     </div>
     <h1>Let's bring your vision <br> to <span>life</span></h1>
-  </section>
-  <a href="about.html" class="next-arrow">
-  <img src="rightarrow.png" alt="Next Page">
+</section>
+
+<a href="about.html" class="next-arrow">
+  <img src="rightarrow.png">
 </a>
-  </main>  
+
 <script>
-  function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("show");
-  }
+function toggleMenu() {
+  document.querySelector(".nav-links").classList.toggle("show");
+}
 </script>
+
 </body>
 </html>
