@@ -137,8 +137,16 @@ section h2 {
   }
 nav ul.nav-links {
     flex-direction: column;
-    gap: 10px;
-    padding: 0 10px;
+    gap: 15px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px
+  rgba(0,0,0,0.15);
+}
   }
 nav ul.nav-links li a {
     font-size: 1.2rem;
