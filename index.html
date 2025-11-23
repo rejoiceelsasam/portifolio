@@ -18,21 +18,24 @@ function toggleMenu() {
 <body>
   <!-- Navbar -->
   <header>
-    <div class="hamburger" onclick="toggleMenu()">
-    ☰
+    <div class="hamburger" id="hamburger">
+        ☰
     </div>
+
     <div class="logo">Rejoice <br><span>Elsa Sam</span></div>
-     <nav>
-      <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html" class="active">About Me</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="project.html" class="active">Projects</a></li>
-      <li><a href="contact.html" class="active">Contact Me</a></li>
-      </ul>
+
+    <nav>
+        <ul class="nav-links" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
     </nav>
+
     <a href="contact.html" class="btn active">Work with me</a>
-  </header>
+</header>
 <script>
   const currentPage = window.location.pathname;
   if (currentPage.includes("Home")) {
