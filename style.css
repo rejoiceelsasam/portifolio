@@ -135,8 +135,10 @@ section h2 {
 }
 /* Responsive */
 @media (max-width: 768px) {
-  section h2 {
-    font-size: 2rem;
+  .nav-links {
+    width: 80%;
+    left: 10%;
+    right: 10%;
   }
 }
 /* About Page */
