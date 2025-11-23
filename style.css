@@ -140,42 +140,40 @@ section h2 {
   /* Hide desktop menu */
   nav ul.nav-links {
     position: absolute;
-    top: 70px;               /* So it appears below navbar */
+    top: 80px;               /* So it appears below navbar */
     right: 20px;
     width: 75%;              /* Now it's not too wide */
     background: #fff;
     display: none;           /* Hidden until hamburger clicked */
     flex-direction: column;  /* Vertical items */
-    gap: 0;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    z-index: 2000;
+    z-index: 999;
   }
 
   /* Each menu item */
+  nav ul.nav-links.active {
+    display: flex;
+  }
   nav ul.nav-links li {
-    padding: 15px 10px;
+    padding: 12px 0px;
     border-bottom: 1px solid #eee;
-    text-align: left;
+    font-size: 18px;
   }
 
   nav ul.nav-links li:last-child {
     border-bottom: none;
   }
-
-  /* Show menu when active */
-  nav ul.nav-links.active {
-    display: flex;
-  }
-
-  /* Smaller button */
+ /* Smaller button */
   .btn {
     padding: 6px 12px;
     font-size: 14px;
-    border-radius: 15px;
   }
-
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+}
   /* Prevent logo and button from breaking layout */
   header {
     padding: 15px 15px;
