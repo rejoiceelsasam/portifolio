@@ -47,5 +47,29 @@
     navLinks.classList.toggle("active");
   });
 </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (!hamburger || !navLinks) {
+      console.error("Hamburger or nav-links not found");
+      return;
+    }
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Optional: click outside to close menu
+    document.addEventListener("click", (e) => {
+      if (navLinks.classList.contains("active") && 
+          !e.target.closest("nav") && 
+          !e.target.closest(".hamburger")) {
+        navLinks.classList.remove("active");
+      }
+    });
+  });
+</script>
 </body>
 </html>
