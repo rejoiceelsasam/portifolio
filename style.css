@@ -180,7 +180,24 @@ section h2 {
   header {
     padding: 15px 15px;
   }
+/* Mobile Hero Text Fix */
+  .hero h1 {
+    font-size: 2rem;        /* Smaller text */
+    line-height: 2.4rem;    /* Proper spacing */
+    text-align: center;
+  }
 
+  .hero h1 span {
+    font-size: 2.2rem;      /* Slightly bigger "life" */
+  }
+
+  .hero {
+    padding: 20px 15px;     /* Better spacing on mobile */
+  }
+
+  .shapes img {
+    width: 80px;            /* Smaller shapes */
+  }
 }
 /* About Page */
 .about-page {
