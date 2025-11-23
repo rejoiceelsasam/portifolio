@@ -135,47 +135,28 @@ section h2 {
 }
 /* Responsive */
 /* ---------------- MOBILE NAVBAR FIX ---------------- */
-/* ===== Mobile Navbar Fix ===== */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 9999;
-    user-select: none;
-  }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    position: relative;
-    z-index: 1000;
-  }
-
+  /* Hide desktop menu */
   nav ul.nav-links {
     position: absolute;
-    top: 60px; /* adjust depending on your header height */
-    right: 16px;
-    width: 75%;
-    max-width: 320px;
+    top: 70px;               /* So it appears below navbar */
+    right: 20px;
+    width: 75%;              /* Now it's not too wide */
     background: #fff;
-    display: none;
-    flex-direction: column;
-    padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: none;           /* Hidden until hamburger clicked */
+    flex-direction: column;  /* Vertical items */
+    gap: 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 2000;
   }
 
-  nav ul.nav-links.active {
-    display: flex;
-  }
-
+  /* Each menu item */
   nav ul.nav-links li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
     text-align: left;
   }
 
@@ -183,26 +164,18 @@ section h2 {
     border-bottom: none;
   }
 
-  nav ul.nav-links li a {
-    font-size: 18px;
-    font-weight: 700;
+  /* Show menu when active */
+  nav ul.nav-links.active {
+    display: flex;
   }
 
+  /* Smaller button */
   .btn {
     padding: 6px 12px;
     font-size: 14px;
-    border-radius: 14px;
+    border-radius: 15px;
   }
 
-  .hero h1 {
-    font-size: 1.9rem;
-    line-height: 1.2;
-    text-align: center;
-  }
-  .hero h1 span {
-    font-size: 2.1rem;
-  }
-}
   /* Prevent logo and button from breaking layout */
   header {
     padding: 15px 15px;
